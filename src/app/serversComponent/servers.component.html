@@ -1,4 +1,10 @@
-<button class="btn btn-success" [disabled]="!allowNewServer">Add Server</button>
-<p [innerText]="allowNewServer"></p>
+<button
+  class="btn btn-success"
+  [disabled]="!allowNewServer"
+  (click)="onCreateServer()"
+>
+  Add Server
+</button>
+<p>{{ serverCreationStatus }}</p>
 <h4>Server with ID of {{ serverId }} is currently {{ getServerStatus() }}</h4>
 <h4>Server with ID of {{ serverId }} is currently {{ getServerStatus() }}</h4>
