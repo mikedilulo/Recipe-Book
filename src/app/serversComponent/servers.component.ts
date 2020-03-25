@@ -8,6 +8,8 @@ export class ServersComponent {
   serverId = 5;
   serverStatus = "Online";
 
+  constructor() {}
+
   getServerStatus() {
     return this.serverStatus;
   }
