@@ -9,6 +9,7 @@ export class ServersComponent {
   serverStatus = "Online";
   allowNewServer = false;
   serverCreationStatus = "Server is not Created";
+  serverName = "";
 
   constructor() {
     setTimeout(() => {
@@ -25,6 +26,6 @@ export class ServersComponent {
   }
 
   onUpdateServerName(event: Event) {
-    this.serverStatus = (<HTMLInputElement>event.target).value;
+    this.serverName = (<HTMLInputElement>event.target).value;
   }
 }
