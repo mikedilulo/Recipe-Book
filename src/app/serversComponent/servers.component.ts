@@ -10,6 +10,7 @@ export class ServersComponent {
   allowNewServer = false;
   serverCreationStatus = "Server is not Created";
   serverName = "Death Star Server";
+  serverCreated = false;
 
   constructor() {
     setTimeout(() => {
@@ -22,6 +23,7 @@ export class ServersComponent {
   }
 
   onCreateServer() {
+    this.serverCreated = true;
     return (this.serverCreationStatus =
       "Server was Created. Name is " + this.serverName);
   }

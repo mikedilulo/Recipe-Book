@@ -8,6 +8,8 @@
 >
   Add Server
 </button>
-<p>{{ serverCreationStatus }}</p>
+<p *ngIf="serverCreated">
+  The new server was created. Server name is {{ serverName }}
+</p>
 <h4>Server with ID of {{ serverId }} is currently {{ getServerStatus() }}</h4>
 <h4>Server with ID of {{ serverId }} is currently {{ getServerStatus() }}</h4>
