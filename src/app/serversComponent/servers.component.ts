@@ -7,8 +7,13 @@ import { Component } from "@angular/core";
 export class ServersComponent {
   serverId = 5;
   serverStatus = "Online";
+  allowNewServer = false;
 
-  constructor() {}
+  constructor() {
+    setTimeout(() => {
+      this.allowNewServer = true;
+    }, 3000);
+  }
 
   getServerStatus() {
     return this.serverStatus;
