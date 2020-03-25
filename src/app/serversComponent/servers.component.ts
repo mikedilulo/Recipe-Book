@@ -11,11 +11,10 @@ export class ServersComponent {
   serverCreationStatus = "Server is not Created";
   serverName = "Death Star Server";
   serverCreated = false;
+  servers = ["TestServerOne", "TestServerTwo"];
 
   constructor() {
-    setTimeout(() => {
-      this.allowNewServer = true;
-    }, 3000);
+    this.serverStatus = Math.random() > 0.5 ? "Online" : "Offline";
   }
 
   getServerStatus() {
@@ -24,6 +23,7 @@ export class ServersComponent {
 
   onCreateServer() {
     this.serverCreated = true;
+    this.servers.push(this.serverName);
     return (this.serverCreationStatus =
       "Server was Created. Name is " + this.serverName);
   }
