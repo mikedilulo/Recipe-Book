@@ -9,7 +9,7 @@ export class ServersComponent {
   serverStatus = "Online";
   allowNewServer = false;
   serverCreationStatus = "Server is not Created";
-  serverName = "";
+  serverName = "Death Star Server";
 
   constructor() {
     setTimeout(() => {
