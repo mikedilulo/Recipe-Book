@@ -6,12 +6,14 @@ import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./headerComponent/header.component";
 import { RecipeItemComponent } from "./recipeComponent/recipeListComponent/recipeItemComponent/recipe-item.component";
 import { RecipeListComponent } from "./recipeComponent/recipeListComponent/recipe-list.component";
+import { RecipeDetailComponent } from "./recipeComponent/recipeDetailComponent/recipe-detail.component";
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     RecipeItemComponent,
-    RecipeListComponent
+    RecipeListComponent,
+    RecipeDetailComponent
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
