@@ -7,7 +7,10 @@
         <a
           class="list-group-item shop-list-component"
           *ngFor="let ingredient of ingredients"
-        ></a>
+        >
+          {{ ingredient.name }}
+          - ({{ ingredient.amount }})
+        </a>
       </ul>
     </div>
   </div>
