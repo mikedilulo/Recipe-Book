@@ -4,7 +4,10 @@
       <app-shopping-list-edit-component></app-shopping-list-edit-component>
       <hr />
       <ul class="list-group">
-        <a class="list-group-item shop-list-component"></a>
+        <a
+          class="list-group-item shop-list-component"
+          *ngFor="let ingredient of ingredients"
+        ></a>
       </ul>
     </div>
   </div>
