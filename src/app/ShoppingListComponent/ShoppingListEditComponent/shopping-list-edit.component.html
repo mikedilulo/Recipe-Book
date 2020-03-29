@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-xs-4 form-group">
             <label for="name">Ingredient Name</label>
-            <input type="text" id="name" class="form-control" #ingredientName />
+            <input type="text" id="name" class="form-control" #nameInput />
           </div>
           <div class="col-xs-2 form-group">
             <label for="amount">Amount</label>
@@ -13,7 +13,7 @@
               type="number"
               id="amount"
               class="form-control"
-              #ingredientAmount
+              #amountInput
             />
           </div>
         </div>
@@ -22,7 +22,7 @@
             <button
               class="btn btn-success mr-2 ml-2"
               type="submit"
-              (click)="addIngredient()"
+              (click)="onAddItem()"
             >
               Add Item
             </button>
