@@ -6,7 +6,12 @@
       ></app-recipe-list-component>
     </div>
     <div class="col-md-7">
-      <app-recipe-detail-component></app-recipe-detail-component>
+      <app-recipe-detail-component
+        *ngIf="selectedRecipe; else infoText"
+      ></app-recipe-detail-component>
+      <ng-template #infoText>
+        <p>Please Select A Recipe</p>
+      </ng-template>
     </div>
   </div>
 </div>
