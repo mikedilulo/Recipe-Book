@@ -8,4 +8,8 @@ export class ShoppingListService {
     new Ingredient("Chocolate Syrup", 5),
     new Ingredient("Oreo Cookies", 200)
   ];
+
+  getIngredients() {
+    return this.ingredients.slice();
+  }
 }
