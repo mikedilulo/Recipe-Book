@@ -1,3 +1,7 @@
 .app-recipe-detail-image {
   max-height: 300px;
 }
+
+app-recipe-detail-component-button {
+  cursor: pointer;
+}
