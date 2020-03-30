@@ -2,6 +2,6 @@
   max-height: 300px;
 }
 
-app-recipe-detail-component-button {
+.app-recipe-detail-component-button {
   cursor: pointer;
 }
