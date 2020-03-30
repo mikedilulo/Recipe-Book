@@ -13,4 +13,6 @@ export class RecipeService {
       "https://images.unsplash.com/photo-1548848221-0c2e497ed557?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
     )
   ];
+
+  getRecipes() {}
 }
