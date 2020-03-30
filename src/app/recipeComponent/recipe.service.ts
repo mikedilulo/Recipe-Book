@@ -1,7 +1,7 @@
 import { Recipe } from "./recipe.model";
 
 export class RecipeService {
-  recipes: Recipe[] = [
+  private recipes: Recipe[] = [
     new Recipe(
       "Carmel Cake",
       "Tasty treat for the whole family",
