@@ -11,6 +11,11 @@ import { RecipeItemComponent } from "./recipeComponent/recipeListComponent/recip
 import { ShoppingListComponent } from "./shoppingListComponent/shopping-list.component";
 import { ShoppingListEditComponent } from "./shoppingListComponent/shoppingListEditComponent/shopping-list-edit.component";
 import { ShoppingListService } from "./shoppingListComponent/shopping-list.service";
+import { Routes } from "@angular/router";
+
+const appRoutes: Routes = [
+  { path: "/shopping-list", component: "ShoppingListComponent" }
+];
 @NgModule({
   declarations: [
     AppComponent,
