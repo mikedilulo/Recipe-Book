@@ -11,7 +11,7 @@ import { RecipeItemComponent } from "./recipeComponent/recipeListComponent/recip
 import { ShoppingListComponent } from "./shoppingListComponent/shopping-list.component";
 import { ShoppingListEditComponent } from "./shoppingListComponent/shoppingListEditComponent/shopping-list-edit.component";
 import { ShoppingListService } from "./shoppingListComponent/shopping-list.service";
-import { Routes } from "@angular/router";
+import { Routes, RouterModule } from "@angular/router";
 
 const appRoutes: Routes = [
   { path: "/shopping-list", component: "ShoppingListComponent" }
@@ -27,7 +27,7 @@ const appRoutes: Routes = [
     ShoppingListComponent,
     ShoppingListEditComponent
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, RouterModule],
   providers: [ShoppingListService],
   bootstrap: [AppComponent]
 })
