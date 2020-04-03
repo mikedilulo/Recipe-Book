@@ -28,7 +28,7 @@ const appRoutes: Routes = [
     ShoppingListComponent,
     ShoppingListEditComponent
   ],
-  imports: [BrowserModule, FormsModule, RouterModule],
+  imports: [BrowserModule, FormsModule, RouterModule.forRoot(appRoutes)],
   providers: [ShoppingListService],
   bootstrap: [AppComponent]
 })
